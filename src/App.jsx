@@ -1,10 +1,10 @@
 import './assets/css/reset.scss';
+import Repository from './Components/Repository';
 
 const App = () => {
   return (
       <>
-
-        <h1>React</h1>
+        <Repository />
       </>
   );
 }
