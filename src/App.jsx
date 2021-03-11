@@ -1,4 +1,4 @@
-import './assets/css/reset.scss';
+import './assets/scss/reset.scss';
 import Repository from './Components/Repository';
 
 const App = () => {

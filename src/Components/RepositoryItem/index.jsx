@@ -5,13 +5,15 @@ import React from 'react';
 function RepositoryItem(props) {
   return (
     <li className="repository__item">
-        <strong>{props.repo.name}</strong>
+        <strong>{props.repository.name}</strong>
         <p className="repository__desc">
-            {props.repo.description}
+            {props.repository.description}
         </p>
-    <a className="repository__link" href={props.repo.link}>
-      acessar Repo
-    </a>
+        <a className="repository__link"
+        target="_blank"
+        href={props.repository.html_url}>
+        Acessar Repositorio
+        </a>
     </li>
   );
 }

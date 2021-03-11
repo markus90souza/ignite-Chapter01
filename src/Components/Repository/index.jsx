@@ -1,4 +1,5 @@
 
+import { useEffect, useState } from 'react';
 import RepositoryItem from '../RepositoryItem';
 import './style.scss';
 const repo = {
@@ -8,7 +9,19 @@ const repo = {
 }
 const Repository = () => {
 
+    const [repositories, setRepositories] = useState([]);
 
+    useEffect(() => {
+
+        const loadRepositories = () => {
+            fetch('https://api.github.com/orgs/rocketseat/repos')
+                .then(response => response.json())
+                .then(data => setRepositories(data));
+        }
+
+        loadRepositories();
+
+    }, [])
 
   return (
       <section className="repository__container">
@@ -17,9 +30,15 @@ const Repository = () => {
           </header>
 
           <ul className="repository__list">
-            <RepositoryItem
-                repository={repo}
-            />
+              {
+                  repositories.map(repository => (
+                    <RepositoryItem
+                        key={repository.name}
+                        repository={repository}
+                    />
+                  ))
+              }
+
           </ul>
       </section>
   )
