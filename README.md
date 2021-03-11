@@ -1,7 +1,9 @@
-# Trilha React - Ignite
+# Ignite - Chapter I
+
+## Trilha React - Ignite
 
 -   [x] -   Configurando Ambiente
 -   [x] -   Conceitos Importantes
--   [] - Chamadas HTTP
+-   [x] -   Chamadas HTTP
 -   [] - Usando Typescript
 -   [] - Finalizando Aplicação
