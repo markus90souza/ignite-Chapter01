@@ -1,7 +1,7 @@
 # Trilha React - Ignite
 
 -   [x] -   Configurando Ambiente
--   [] - Conceitos Importantes
+-   [x] -   Conceitos Importantes
 -   [] - Chamadas HTTP
 -   [] - Usando Typescript
 -   [] - Finalizando Aplicação
