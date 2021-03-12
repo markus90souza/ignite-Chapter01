@@ -6,4 +6,4 @@
 -   [x] -   Conceitos Importantes
 -   [x] -   Chamadas HTTP
 -   [x] -   Usando Typescript
--   [] - Finalizando Aplicação
+-   [x] -   Finalizando Aplicação
