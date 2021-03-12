@@ -5,5 +5,5 @@
 -   [x] -   Configurando Ambiente
 -   [x] -   Conceitos Importantes
 -   [x] -   Chamadas HTTP
--   [] - Usando Typescript
+-   [x] -   Usando Typescript
 -   [] - Finalizando Aplicação
