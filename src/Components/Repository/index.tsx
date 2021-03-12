@@ -2,14 +2,17 @@
 import { useEffect, useState } from 'react';
 import RepositoryItem from '../RepositoryItem';
 import './style.scss';
-const repo = {
-    name: 'Teste',
-    description: 'Desc',
-    link: 'https://github.com/rocketseat'
+
+
+type RepositoryProps = {
+    name: string;
+    description: string;
+    html_url: string;
 }
+
 const Repository = () => {
 
-    const [repositories, setRepositories] = useState([]);
+    const [repositories, setRepositories] = useState<RepositoryProps[]>([]);
 
     useEffect(() => {
 
